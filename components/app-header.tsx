@@ -112,22 +112,22 @@ const raleway = Raleway({
 
 export function SiteNavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (isOpen) {
-        document.body.style.overflow = "hidden";
-        // Prevent scrolling
-      } else {
-        document.body.style.overflow = "scroll";
-        // Restore scrolling
-      }
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     if (isOpen) {
+  //       document.body.style.overflow = "hidden";
+  //       // Prevent scrolling
+  //     } else {
+  //       document.body.style.overflow = "scroll";
+  //       // Restore scrolling
+  //     }
 
-      return () => {
-        document.body.style.overflow = "";
-        // Cleanup on unmount
-      };
-    }
-  }, [isOpen]);
+  //     return () => {
+  //       document.body.style.overflow = "";
+  //       // Cleanup on unmount
+  //     };
+  //   }
+  // }, [isOpen]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b-2 bg-background/95 backdrop-blur border-border/40 shadow-xs">

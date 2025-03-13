@@ -141,32 +141,45 @@ export default function Roadmap() {
     <>
       <div className="relative max-w-6xl mx-auto py-10 px-4 sm:hidden block">
         {/* Dotted Line */}
-        <div className="absolute left-1/2 -translate-x-1/2 h-full hidden md:block">
+        {/* <div className="absolute left-1/2 -translate-x-1/2  h-full hidden md:block">
           <Image
             src={dottedLine}
             alt="dotted-vertical-line"
             width={12}
             height={48}
             quality={80}
+            className="object-contain h-full absolute top-20 "
+          />
+        </div> */}
+
+        <div className="absolute left-4 transform bottom-16  -translate-x-1/2 h-[85%]">
+          <Image
+            src={dottedLine}
+            alt="dotted-vertical-line"
+            width={12}
+            //  Adjust if  needed
+            height={48}
+            // Adjust if needed
+            quality={80}
             className="object-contain h-full"
           />
         </div>
 
         {/* Mobile Dotted Line */}
-        <div className="absolute left-4 h-full w-[2px] bg-[#B2B2B2] md:hidden"></div>
+        {/* <div className="absolute left-4 h-full w-[2px] bg-[#B2B2B2] md:hidden"></div> */}
 
         {/* Roadmap Items */}
-        <div className="relative flex flex-col items-start md:items-center space-y-12">
+        <div className="relative flex flex-col items-start md:items-center space-y-12 ml-3">
           {roadmapData.map((item, index) => (
             <div
               key={item.id}
               className="relative flex w-full items-center md:items-start"
             >
               {/* Mobile View - Single Column */}
-              <div className="flex gap-4 items-center md:hidden">
+              <div className="flex gap-2 items-center md:hidden">
                 {/* Number Badge */}
                 <div className="bg-[#B2B2B2] p-1 rounded-lg justify-self-start place-self-start">
-                  <div className="bg-[#6060BF] text-white px-3 py-1 rounded-lg">
+                  <div className="bg-[#6060BF] text-white px-1 py-1 rounded-lg">
                     0{index + 1}
                   </div>
                 </div>
@@ -216,7 +229,7 @@ export default function Roadmap() {
       </div>
 
       <div className="relative max-w-6xl mx-auto py-10 sm:block hidden">
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-[90%]">
+        <div className="absolute left-1/2 transform top-12 -translate-x-1/2 h-[90%]">
           <Image
             src={dottedLine}
             alt="dotted-vertical-line"
@@ -244,7 +257,7 @@ export default function Roadmap() {
                         {item.description}
                       </p>
                     </div>
-                    <div className="bg-[#B2B2B2] p-1 rounded-lg w-fit max-w-fit justify-self-start place-self-start">
+                    <div className="bg-[#B2B2B2] p-1 rounded-lg w-fit max-w-fit justify-self-start place-self-center">
                       <div className="bg-[#6060BF] text-white px-3 py-1 rounded-lg">
                         0{index + 1}
                       </div>
@@ -257,7 +270,7 @@ export default function Roadmap() {
               {index % 2 === 0 && (
                 <div className="w-1/2 pl-6 text-left ml-auto">
                   <div className="flex sm:gap-x-4  ">
-                    <div className="bg-[#B2B2B2] p-1 rounded-lg w-fit max-w-fit justify-self-start place-self-start">
+                    <div className="bg-[#B2B2B2] p-1 rounded-lg w-fit max-w-fit justify-self-start place-self-center">
                       <div className="bg-[#6060BF] text-white px-3 py-1 rounded-lg">
                         0{index + 1}
                       </div>
