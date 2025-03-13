@@ -165,69 +165,6 @@ function UltimateSection() {
           </div>
         </div>
 
-        {/* Mobile Layout */}
-        {/* <div className="md:hidden flex flex-col items-center mt-8 mb-6">
-          <MotionDiv
-            key={ultimateFeatures[activeIndex].title}
-            className="text-center"
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.5,
-            }}
-          >
-            <div className="flex justify-center">
-              <Image
-                src={ultimateFeatures[activeIndex].image}
-                alt={ultimateFeatures[activeIndex].title}
-                width={300}
-                height={300}
-                className="rounded-lg mb-4"
-              />
-            </div>
-
-            <div className="group p-3 rounded-lg flex flex-col gap-y-3 items-center transition-all duration-300 ease-in-out hover:bg-[#E6E6F2] hover:border-l-2 sm:hover:border-l-4 hover:border-[#3A4096] w-full sm:max-w-[410px]">
-              <div className="flex items-center gap-x-1 sm:gap-x-2 shadow-sm rounded-full px-3 sm:px-4 py-1 sm:py-2 w-fit bg-white group-hover:bg-[#FAC9B9] transition-colors duration-300 ease-in-out">
-                <Image
-                  src={multiply}
-                  alt="cancel-btn"
-                  role="button"
-                  width={12}
-                  height={12}
-                />
-
-                <span className="line-through font-[400] sm:font-[500] text-xs sm:text-[10px] text-[#525266]">
-                  {ultimateFeatures[activeIndex].challenge}
-                </span>
-              </div>
-
-              <h3 className="font-[600] sm:font-[700] text-sm sm:text-lg group-hover:text-[#6060BF] transition-colors duration-300 ease-in-out">
-                {ultimateFeatures[activeIndex].title}
-              </h3>
-
-              <p className="font-[300] sm:font-[400] text-xs sm:text-[12px] leading-5 sm:leading-[28px]">
-                {ultimateFeatures[activeIndex].content}
-              </p>
-            </div>
-          </MotionDiv>
-
-          <div className="flex space-x-2 mt-6">
-            {ultimateFeatures.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  activeIndex === index ? "bg-blue-500 w-8" : "bg-gray-600 w-4"
-                }`}
-              />
-            ))}
-          </div>
-        </div> */}
-
         <div
           {...handlers}
           className="md:hidden flex flex-col items-center mt-8 mb-6"
@@ -456,3 +393,70 @@ function UltimateSection() {
 }
 
 export default UltimateSection;
+
+{
+  /* Mobile Layout */
+}
+{
+  /* <div className="md:hidden flex flex-col items-center mt-8 mb-6">
+          <MotionDiv
+            key={ultimateFeatures[activeIndex].title}
+            className="text-center"
+            initial={{
+              opacity: 0,
+            }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.5,
+            }}
+          >
+            <div className="flex justify-center">
+              <Image
+                src={ultimateFeatures[activeIndex].image}
+                alt={ultimateFeatures[activeIndex].title}
+                width={300}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+            </div>
+
+            <div className="group p-3 rounded-lg flex flex-col gap-y-3 items-center transition-all duration-300 ease-in-out hover:bg-[#E6E6F2] hover:border-l-2 sm:hover:border-l-4 hover:border-[#3A4096] w-full sm:max-w-[410px]">
+              <div className="flex items-center gap-x-1 sm:gap-x-2 shadow-sm rounded-full px-3 sm:px-4 py-1 sm:py-2 w-fit bg-white group-hover:bg-[#FAC9B9] transition-colors duration-300 ease-in-out">
+                <Image
+                  src={multiply}
+                  alt="cancel-btn"
+                  role="button"
+                  width={12}
+                  height={12}
+                />
+
+                <span className="line-through font-[400] sm:font-[500] text-xs sm:text-[10px] text-[#525266]">
+                  {ultimateFeatures[activeIndex].challenge}
+                </span>
+              </div>
+
+              <h3 className="font-[600] sm:font-[700] text-sm sm:text-lg group-hover:text-[#6060BF] transition-colors duration-300 ease-in-out">
+                {ultimateFeatures[activeIndex].title}
+              </h3>
+
+              <p className="font-[300] sm:font-[400] text-xs sm:text-[12px] leading-5 sm:leading-[28px]">
+                {ultimateFeatures[activeIndex].content}
+              </p>
+            </div>
+          </MotionDiv>
+
+          <div className="flex space-x-2 mt-6">
+            {ultimateFeatures.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeIndex === index ? "bg-blue-500 w-8" : "bg-gray-600 w-4"
+                }`}
+              />
+            ))}
+          </div>
+        </div> */
+}
