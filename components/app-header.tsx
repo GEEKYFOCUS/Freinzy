@@ -114,17 +114,21 @@ export function SiteNavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden"; // Prevent scrolling
-    } else {
-      document.body.style.overflow = "scroll"; // Restore scrolling
+    if (typeof window !== "undefined") {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+        // Prevent scrolling
+      } else {
+        document.body.style.overflow = "scroll";
+        // Restore scrolling
+      }
+
+      return () => {
+        document.body.style.overflow = "";
+        // Cleanup on unmount
+      };
     }
-
-    return () => {
-      document.body.style.overflow = ""; // Cleanup on unmount
-    };
   }, [isOpen]);
-
   return (
     <header className="sticky top-0 z-50 w-full border-b-2 bg-background/95 backdrop-blur border-border/40 shadow-xs">
       <nav className="container mx-auto flex h-14 items-center justify-between px-4 py-6 sm:px-6 sm:py-8 max-w-6xl">
