@@ -122,7 +122,7 @@ function HeroSection() {
             <span className="text-[#FA602D]">- No Coding Required.</span>
           </h2>
 
-          <p className="text-sm sm:text-[14px] md:text-lg text-[#525266b6] mt-2 leading-relaxed sm:leading-[36px]">
+          <p className="text-sm sm:text-[14px] md:text-lg text-[#525266f1] mt-2 leading-relaxed sm:leading-[36px]">
             Enhance the group travel experience, capture valuable customer data,
             and unlock new revenue streams with your own custom-branded travel
             app. With Frienzy&apos;s white-label solution, you&apos;ll receive
@@ -131,7 +131,7 @@ function HeroSection() {
           </p>
 
           <div className="relative mt-6 flex justify-center sm:justify-start">
-            <Button className="cursor-pointer text-sm sm:text-base font-bold text-white bg-orange-600 rounded-full px-6 py-3 hover:bg-orange-500">
+            <Button className="cursor-pointer text-sm sm:text-base font-bold text-white bg-orange-600 rounded-full px-6 py-3 lg:px-5 lg:py-6  sm:px-3 sm:p hover:bg-orange-500">
               Schedule A Demo
             </Button>
             <Image
@@ -148,11 +148,11 @@ function HeroSection() {
         {/* Right Image */}
         <div className="relative w-full sm:flex-1 hidden  sm:flex justify-center sm:justify-end">
           <div
-            className="relative w-full sm:w-[480px] h-[250px] sm:h-[520px] bg-center  bg-no-repeat"
+            className="relative w-full  h-[250px] sm:w-[300px] sm:h-[360px] lg:w-[480px] lg:h-[520px] sm:bg-right sm:bg-contain sm:bg-[cover_1000px_500px] lg:bg-[right_1000px_500px]  bg-no-repeat"
             style={{
               backgroundImage: `url(${herobg.src})`,
-              backgroundPosition: "right",
-              backgroundSize: "1000px 500px",
+              // backgroundPosition: "right",
+              // backgroundSize: "1000px 500px",
               flex: 1,
             }}
           >

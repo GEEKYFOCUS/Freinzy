@@ -510,8 +510,8 @@ function DetailSection() {
       <div className="mx-auto flex flex-col sm:flex-row gap-4 sm:gap-x-12 max-w-6xl w-full px-6 sm:px-8 mb-4 sm:mb-8">
         <div className="space-y-10 sm:space-y-28">
           {/* First Section */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-x-32">
-            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-x-32">
+            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
               <h2 className="text-lg sm:text-[27px] font-semibold sm:tracking-tight text-[#525266]">
                 Boost Traveler Satisfaction and Drive Repeat Bookings
               </h2>
@@ -520,7 +520,9 @@ function DetailSection() {
                 <span className="font-extrabold text-[#525266]">
                   45%+ increase in re-bookings
                 </span>{" "}
-                through Frienzy&apos;s re-targeting campaigns.
+                through Frienzy&apos;s re-targeting campaigns. Scale your
+                revenue by capturing traveler data and launching personalized
+                promotions to past customers based on data insights
               </p>
             </div>
             <div
@@ -540,14 +542,17 @@ function DetailSection() {
           </div>
 
           {/* Second Section */}
-          <div className="flex flex-col sm:flex-row-reverse items-center gap-4 sm:gap-x-32">
-            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-x-32">
+            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
               <h2 className="text-lg sm:text-[27px] font-semibold sm:tracking-tight text-[#525266]">
-                One Place for Your Clients to Access Everything
+                One Place for Your Clients to Access Everything And Get
+                Real-Time Updates
               </h2>
               <p className="text-sm sm:text-base leading-[20px] sm:leading-[35px] text-[#5252666e]">
-                Access itineraries, reservations, flight tickets, invoices, and
-                more in one place.
+                Your travel clients can access their itineraries, reservations,
+                flight tickets, invoices and other documents in one place. You
+                can also share real-time updates with clients through push
+                notifications and direct chats.
               </p>
             </div>
             <div
@@ -569,8 +574,8 @@ function DetailSection() {
           </div>
 
           {/* Third Section */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-x-32">
-            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-x-32">
+            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
               <h2 className="text-lg sm:text-[27px] font-semibold sm:tracking-tight text-[#525266]">
                 Save 10+ Hours A Week With Frienzy&apos;s AI
               </h2>
@@ -579,7 +584,8 @@ function DetailSection() {
                 <span className="font-extrabold text-[#525266]">
                   save 10+ hours a week
                 </span>{" "}
-                with AI-driven tools.
+                with AI-driven tools that streamlines itinerary uploads, expense
+                tracking, and group coordination.
               </p>
               <ul className="space-y-2">
                 {travelList.map((content, index) => (
@@ -614,17 +620,19 @@ function DetailSection() {
           </div>
 
           {/* Fourth Section */}
-          <div className="flex flex-col sm:flex-row-reverse items-center gap-4 sm:gap-x-32">
-            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-x-32">
+            <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
               <h2 className="text-lg sm:text-[27px] font-semibold sm:tracking-tight text-[#525266]">
                 Build Your Community With In-Trip Engagement
               </h2>
               <p className="text-sm sm:text-base leading-[20px] sm:leading-[35px] text-[#5252666e]">
-                Keep travelers engaged through{" "}
+                Take group tours experience up a notch beyond just the
+                experience the travel destination provides by keeping travellers
+                fully engaged during the trip through{" "}
                 <span className="font-extrabold text-[#525266]">
                   in-app group chat, polls, and shared albums
                 </span>
-                .
+                for them to interact and connect with one another. .
               </p>
             </div>
 

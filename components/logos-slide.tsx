@@ -13,11 +13,11 @@ const companyLogo = [
 
 export default function ScrollingLogos() {
   return (
-    <div className="w-full overflow-hidden mt-4 sm:mt-6 py-4">
+    <div className="w-full overflow-hidden mt-4 sm:mt-6 py-4 max-w-screen sm:max-w-[90%]">
       <div className="relative flex whitespace-nowrap animate-scroll items-center">
         {/* Duplicating Logos for Infinite Effect */}
         {[...companyLogo, ...companyLogo].map((logo, index) => (
-          <div key={index} className="mx-6 flex-shrink-0">
+          <div key={index} className="mx-6 flex-shrink-0 ">
             <Image
               src={logo}
               alt="Company Logo"

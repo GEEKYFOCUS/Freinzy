@@ -72,7 +72,7 @@ function QuestionSection() {
                 <h2 className="font-[500] text-[#242426] sm:font-[600] text-lg sm:text-2xl leading-5 sm:leading-9">
                   {content.title}
                 </h2>
-                <p className="font-[500] text-[#242426d8] sm:font-[600] text-[13px] leading-5 sm:leading-6 ">
+                <p className="font-[500] text-[#525266] sm:font-[600] text-[13px] leading-5 sm:leading-6 ">
                   {content.content}
                 </p>
               </div>

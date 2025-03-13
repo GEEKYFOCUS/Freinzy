@@ -265,7 +265,7 @@ function ReviewSection() {
     >
       <div className="mx-auto sm:max-w-6xl max-w-screen px-4 sm:px-6 lg:px-8 ">
         {/* Header Section */}
-        <div className="flex flex-col sm:flex-row justify-between gap-6 ">
+        <div className="flex flex-col md:flex-row justify-between gap-6 ">
           <div className="flex flex-col gap-4 flex-1">
             <div className="relative font-bold text-xs sm:text-sm text-slate-800 bg-[#FFEFEA] rounded-full w-fit px-3 py-2">
               ✨ Frienzy ✨ White Label App Use Case
@@ -275,7 +275,7 @@ function ReviewSection() {
             </h2>
           </div>
           <div className="flex flex-col gap-4 flex-1">
-            <p className="text-white/50 font-light text-[clamp(12px,3vw,17px)] leading-relaxed">
+            <p className="text-white/50 font-light text-[clamp(12px,3vw,17px)] leading-relaxed pr-0 sm:pr-4 sm:line-clamp-3 lg:line-clamp-none lg:pr-0 ">
               If you&apos;re in the business of experience curation for
               travellers, Frienzy&apos;s custom-branded travel app lets you bake
               a wow experience into all of your touchpoints with travel clients.
@@ -287,7 +287,7 @@ function ReviewSection() {
         </div>
 
         {/* Review Cards */}
-        <div className="grid gap-6 grid-cols-1 max-w-fit sm:grid-cols-2 lg:grid-cols-3 mt-8 !sm:mt-12">
+        <div className="grid gap-6 grid-cols-1 max-w-fit sm:grid-cols-1 lg:grid-cols-3 mt-8 !sm:mt-12">
           {reviewList.map((item, index) => (
             <div
               key={index}
@@ -314,14 +314,14 @@ function ReviewSection() {
         </div>
 
         {/* User Reviews */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8  w-fit max-w-[100%] sm:max-w-fit sm:w-auto">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 mt-8  w-fit max-w-[100%] sm:max-w-[70%] lg:max-w-full ">
           {userReviewList.map((content, index) => (
             <div
               key={index}
               className="bg-[#4A4A98]/50 backdrop-blur-lg p-4 rounded-xl shadow-lg  sm:max-w-auto"
             >
               {/* User Info & Logo */}
-              <div className="flex flex-col gap-y-2 sm:flex-row justify-between items-start sm:items-center">
+              <div className="flex flex-col gap-y-2  sm:flex-row justify-between  items-start sm:items-center">
                 <div className="flex items-center gap-3">
                   <Image
                     src={content.reviewerLogo}

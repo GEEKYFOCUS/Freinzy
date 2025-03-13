@@ -61,6 +61,13 @@ function UltimateSection() {
         "Shared photo album for your group travel clients to share and relive memories with one another.",
       image: "/itenary2.png",
     },
+    {
+      challenge: "Missed revenue growth opportunities",
+      title: "Push notifications & trip promotion tools",
+      content:
+        "Send mass messages, push notifications, and promotions to past travelers for new adventures.",
+      image: "/itenary4.png",
+    },
   ];
 
   return (
@@ -104,7 +111,7 @@ function UltimateSection() {
                     width={10}
                     height={10}
                   />
-                  <span className="line-through sm:font-[500] font-[400] sm:text-[10px] text-sm text-[#525266]">
+                  <span className="line-through sm:font-[500] font-[400] sm:text-[10px] text-sm text-[#525266f3]">
                     {content.challenge}
                   </span>
                 </div>
@@ -121,15 +128,15 @@ function UltimateSection() {
             ))}
           </div>
 
-          <div className="relative flex-1 h-auto">
+          <div className="relative flex-1 h-auto ">
             {ultimateFeatures.map((feature, index) => (
               <Image
                 key={index}
                 src={feature.image}
                 alt="features-image"
                 fill
-                quality={80}
-                className={`absolute   transition-opacity duration-500 ${
+                quality={90}
+                className={`absolute  object-contain  transition-opacity duration-500 ${
                   isActive === index ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -139,54 +146,6 @@ function UltimateSection() {
 
         {/* Mobile Layout */}
         <div className="md:hidden flex flex-col items-center mt-8 mb-6">
-          {/* <motion.div
-            key={ultimateFeatures[activeIndex].title}
-            className="text-center"
-          >
-            <div className="flex justify-center">
-              <Image
-                src={ultimateFeatures[activeIndex].image}
-                alt={ultimateFeatures[activeIndex].title}
-                width={300}
-                height={300}
-                className="rounded-lg mb-4 "
-              />
-            </div>
-
-            <div
-              className="group p-3 rounded-lg flex flex-col gap-y-3 items-center 
-    transition-all duration-300 ease-in-out 
-    hover:bg-[#E6E6F2] hover:border-l-2 sm:hover:border-l-4 
-    hover:border-[#3A4096] w-full sm:max-w-[410px]"
-            >
-              <div
-                className="flex items-center gap-x-1 sm:gap-x-2 shadow-sm rounded-full 
-      px-3 sm:px-4 py-1 sm:py-2 w-fit 
-      bg-white group-hover:bg-[#FAC9B9] 
-      transition-colors duration-300 ease-in-out"
-              >
-                <Image
-                  src={multiply}
-                  alt="cancel-btn"
-                  role="button"
-                  width={12}
-                  height={12}
-                />
-                <span className="line-through font-[400] sm:font-[500] text-xs sm:text-[10px] text-[#525266]">
-                  {ultimateFeatures[activeIndex].challenge}
-                </span>
-              </div>
-              <h3
-                className="font-[600] sm:font-[700] text-sm sm:text-lg 
-      group-hover:text-[#6060BF] transition-colors duration-300 ease-in-out"
-              >
-                {ultimateFeatures[activeIndex].title}
-              </h3>
-              <p className="font-[300] sm:font-[400] text-xs sm:text-[12px] leading-5 sm:leading-[28px]">
-                {ultimateFeatures[activeIndex].content}
-              </p>
-            </div>
-          </motion.div> */}
           <MotionDiv
             key={ultimateFeatures[activeIndex].title}
             className="text-center"
@@ -234,7 +193,7 @@ function UltimateSection() {
               </p>
             </div>
           </MotionDiv>
-          ;
+
           <div className="flex space-x-2 mt-6">
             {ultimateFeatures.map((_, index) => (
               <button
@@ -249,11 +208,11 @@ function UltimateSection() {
         </div>
 
         <div className="sm:translate-y-24">
-          <div className="flex flex-col sm:flex-row gap-y-4 sm:gap-x-6">
+          <div className="flex flex-col lg:flex-row gap-y-4 sm:gap-x-6">
             {/* First Card - Content First */}
             {/* <div className="p-[2px] rounded-3xl bg-gradient-to-r max-w-fit from-[#ffffff] to-[#FAC9B9] border-1 border-white shadow-lg"> */}
 
-            <div className="relative flex-1 w-full sm:w-1/3">
+            <div className="relative flex-1 w-full lg:w-1/3">
               <div
                 className="absolute inset-0 rounded-3xl border-[1px] pointer-events-none"
                 style={{
@@ -300,7 +259,7 @@ function UltimateSection() {
 
             {/* </div> */}
             {/* Second Card */}
-            <div className="relative flex-1 w-full sm:w-1/3">
+            <div className="relative flex-1 w-full lg:w-1/3">
               <div
                 className="absolute inset-0 rounded-3xl border-[1px] pointer-events-none"
                 style={{
@@ -346,7 +305,7 @@ function UltimateSection() {
             </div>
 
             {/* Third Card */}
-            <div className="relative flex-1 w-full sm:w-1/3">
+            <div className="relative flex-1 w-full lg:w-1/3">
               <div
                 className="absolute inset-0 rounded-3xl border-[1px] pointer-events-none"
                 style={{
@@ -395,7 +354,7 @@ function UltimateSection() {
         </div>
       </div>
 
-      <div className="flex justify-center -translate-y-28  sm:-translate-y-24">
+      <div className="flex justify-center -translate-y-28  sm:-translate-y-24 sm:max-w-[98%] lg:max-w-screen">
         <Image
           src={cloudymountain}
           alt="Cloudy Mountain"

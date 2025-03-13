@@ -1,5 +1,3 @@
-
-
 import { Raleway } from "next/font/google";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -43,7 +41,7 @@ function Footer() {
       className={`${raleway.className} sm:pt-16 pt-8 pb-6 relative flex flex-col`}
     >
       <div className="mx-auto sm:p-8 p-6 gap-x-2 sm:gap-x-12 sm:max-w-6xl max-w-screen">
-        <div className="flex flex-col sm:flex-row justify-between gap-y-8 sm:gap-x-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-y-8 sm:gap-x-8">
           {/* Left Side (Logo & Lists) */}
           <div className="sm:space-y-12 space-y-4 py-4 px-2">
             <div className="max-w-fit">
@@ -115,7 +113,7 @@ function Footer() {
             <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
               Subscribe to get updates
             </h2>
-            <p className="text-gray-600">
+            <p className="text-[#242426]">
               Subscribe to get the latest news, updates, new features, and
               product releases. Don&apos;t miss out on the future of event
               communication and safety - subscribe now!

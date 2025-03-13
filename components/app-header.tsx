@@ -96,7 +96,7 @@
 //   );
 // }
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -112,6 +112,22 @@ const raleway = Raleway({
 
 export function SiteNavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (isOpen) {
+        document.body.style.overflow = "hidden";
+        // Prevent scrolling
+      } else {
+        document.body.style.overflow = "scroll";
+        // Restore scrolling
+      }
+
+      return () => {
+        document.body.style.overflow = "";
+        // Cleanup on unmount
+      };
+    }
+  }, [isOpen]);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b-2 bg-background/95 backdrop-blur border-border/40 shadow-xs">
@@ -169,12 +185,12 @@ export function SiteNavBar() {
         {/* Desktop Buttons */}
         <div className="hidden sm:flex items-center gap-2">
           <Button
-            className={`${raleway.className} bg-orange-600 text-white rounded-full sm:px-2 sm:py-3 md:px-4 md:py-3 lg:px-5 lg:py-3 hover:bg-orange-500`}
+            className={`${raleway.className} bg-orange-600 text-white rounded-full sm:px-2 sm:py-3 md:px-5 md:py-5 lg:px-5 lg:py-6 hover:bg-orange-500`}
           >
             Contact Us
           </Button>
           <Button
-            className={`${raleway.className} bg-stone-700 text-white rounded-full sm:px-2 sm:py-3 md:px-4 md:py-3 lg:px-5 lg:py-3 hover:bg-stone-600`}
+            className={`${raleway.className} bg-stone-700 text-white rounded-full sm:px-2 sm:py-3 md:px-5 md:py-5 lg:px-5 lg:py-6  hover:bg-stone-600`}
           >
             Book a Demo
           </Button>
@@ -199,7 +215,7 @@ export function SiteNavBar() {
 
       {/* Mobile Sliding Menu */}
       <div
-        className={`fixed top-0 right-0 h-screen w-[85%] bg-[#FA602D] shadow-lg z-50 overflow-hidden
+        className={`fixed top-0 right-0 h-screen w-[85%] bg-[#FA602D] shadow-lg z-50  overflow-hidden overflow-y-scroll
           transform transition-transform duration-300 ease-in-out
           ${
             isOpen ? "translate-x-0 opacity-100" : "-translate-x-200 opacity-0 "
