@@ -76,10 +76,10 @@ function UltimateSection() {
     >
       <div className="mx-auto pt-8 sm:pb-16 pb-6 max-w-6xl w-full px-6 sm:px-8">
         <div className="text-[#525266] flex flex-col items-center gap-y-4 sm:gap-y-6">
-          <h2 className="sm:text-3xl sm:font-[600] font-[500] ">
+          <h2 className="max-[400px]:text-base text-xl  sm:text-3xl sm:font-[600] font-[500] ">
             The Ultimate Group Travel Solution
           </h2>
-          <p className="sm:font-[200] font-[100] sm:text-[18px] text-sm text-center ">
+          <p className="sm:font-[400] font-[300] sm:text-[18px] text-[14px] text-center ">
             Seamlessly coordinate every aspect of group travel, from planning to
             real-time updates—all in one powerful platform.
           </p>
@@ -236,10 +236,10 @@ function UltimateSection() {
                 }}
               >
                 <div className="bg-white/30 backdrop-blur-sm px-4 py-3 sm:space-y-2 space-y-2 rounded-md text-start">
-                  <h4 className="font-semibold sm:font-bold sm:text-[18px] text-[14px]">
+                  <h4 className="font-[600] sm:font-[700] sm:text-[18px] text-[14px]">
                     Build your CRM
                   </h4>
-                  <p className="font-light text-[#52526685] sm:font-normal sm:leading-[28px] leading-[14px] sm:text-[13px] text-sm">
+                  <p className="font-[400] sm:font-[300] text-[#525266]  sm:leading-[28px] leading-[16px] sm:text-[14px] text-sm">
                     Grow your CRM effortlessly—every customer who downloads your
                     app is automatically added.
                   </p>
@@ -293,10 +293,10 @@ function UltimateSection() {
                   />
                 </div>
                 <div className="bg-white/30 backdrop-blur-sm px-4 py-3 sm:space-y-2 space-y-2 rounded-md text-start">
-                  <h4 className="font-semibold sm:font-bold sm:text-[18px] text-[14px]">
+                  <h4 className="font-[600] sm:[700] sm:text-[18px] text-[14px]">
                     Enhance Loyalty
                   </h4>
-                  <p className="font-light text-[#52526685] sm:font-normal sm:leading-[28px] leading-[14px] sm:text-[13px] text-sm">
+                  <p className="font-[300] sm:font-[400] text-[#525266]  sm:leading-[28px] leading-[14px] sm:text-[13.98px] text-sm">
                     Keep customers engaged and loyal with our exclusive app
                     experiences.
                   </p>
@@ -330,10 +330,10 @@ function UltimateSection() {
                 }}
               >
                 <div className="bg-white/30 backdrop-blur-sm px-4 py-3 sm:space-y-2 space-y-2 rounded-md text-start">
-                  <h4 className="font-semibold sm:font-bold sm:text-[18px] text-[14px]">
+                  <h4 className="font-[600] sm:font-[700]  sm:text-[18px] text-[14px]">
                     Custom Branding
                   </h4>
-                  <p className="font-light text-[#52526685] sm:font-normal sm:leading-[28px] leading-[14px] sm:text-[13px] text-sm">
+                  <p className="font-[300] text-[#525266] sm:font-[400] sm:leading-[28px] leading-[14px] sm:text-[13.98px] text-sm">
                     Provide a luxury, custom-branded experience for your
                     customers that will keep them coming back.
                   </p>

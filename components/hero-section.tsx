@@ -116,13 +116,30 @@ function HeroSection() {
             </div>
           </div>
 
-          <h2 className="font-bold text-3xl lg:text-5xl sm:text-md  md:text-lg text-[#525266] mt-4 leading-tight min-[320px]:text-xl max-[420px]:text-2xl">
+          {/* <h2 className="font-[500] sm:font-[600] text-sm text-center sm:text-start lg:text-5xl sm:text-md  md:text-lg text-[#525266] mt-4 leading-tight min-[320px]:text-xl max-[420px]:text-2xl">
             Launch A Custom App <br />
             For Your Travel Business <br />
             <span className="text-[#FA602D]">- No Coding Required.</span>
           </h2>
 
           <p className="text-sm sm:text-[14px] md:text-lg text-[#525266f1] mt-2 leading-relaxed sm:leading-[36px]">
+            Enhance the group travel experience, capture valuable customer data,
+            and unlock new revenue streams with your own custom-branded travel
+            app. With Frienzy&apos;s white-label solution, you&apos;ll receive
+            your app in just 6 weeks, ready for your clients to download—no
+            coding required.
+          </p> */}
+
+          <h2 className="font-[500] block sm:hidden sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">
+            Launch A Custom App For Your Travel Business
+            <span className="text-[#FA602D]"> -No Coding Required.</span>
+          </h2>
+          <h2 className="font-[500] hidden sm:block sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">
+            Launch A Custom App For Your Travel Business <br />
+            <span className="text-[#FA602D]">- No Coding Required.</span>
+          </h2>
+
+          <p className="text-center sm:text-left text-sm sm:text-base md:text-lg text-[#525266f1] mt-2 leading-relaxed sm:leading-[36px] mx-auto max-w-[600px]">
             Enhance the group travel experience, capture valuable customer data,
             and unlock new revenue streams with your own custom-branded travel
             app. With Frienzy&apos;s white-label solution, you&apos;ll receive

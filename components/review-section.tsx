@@ -275,7 +275,7 @@ function ReviewSection() {
             </h2>
           </div>
           <div className="flex flex-col gap-4 flex-1">
-            <p className="text-white/50 font-light text-[clamp(12px,3vw,17px)] leading-relaxed pr-0 sm:pr-4 sm:line-clamp-3 lg:line-clamp-none lg:pr-0 ">
+            <p className="text-white sm:font-[300] font-[400]  text-[clamp(12px,3vw,17px)] leading-relaxed pr-0 sm:pr-4  lg:pr-0 ">
               If you&apos;re in the business of experience curation for
               travellers, Frienzy&apos;s custom-branded travel app lets you bake
               a wow experience into all of your touchpoints with travel clients.
@@ -297,16 +297,16 @@ function ReviewSection() {
                 <Image
                   src={item.image}
                   alt="team operation"
-                  quality={80}
+                  quality={90}
                   width={390}
                   height={270}
                   className="rounded-xl object-cover sm:w-full sm:h-auto "
                 />
               </div>
-              <h3 className="text-white text-[clamp(16px,3vw,20px)] font-semibold max-w-fit">
+              <h3 className="text-white text-[clamp(16px,3vw,20px)]  font-[600] sm:font-[700] max-w-fit">
                 {item.title}
               </h3>
-              <p className="text-white/50 font-light text-[clamp(10px,2.5vw,14px)] leading-relaxed max-w-fit ">
+              <p className="text-white font-[300] sm:font-[400] text-[clamp(10px,2.5vw,14px)] leading-relaxed max-w-fit ">
                 {item.content}
               </p>
             </div>
@@ -318,7 +318,7 @@ function ReviewSection() {
           {userReviewList.map((content, index) => (
             <div
               key={index}
-              className="bg-[#4A4A98]/50 backdrop-blur-lg p-4 rounded-xl shadow-lg  sm:max-w-auto"
+              className="bg-[#4A4A98] backdrop-blur-sm p-4 rounded-xl shadow-lg  sm:max-w-auto"
             >
               {/* User Info & Logo */}
               <div className="flex flex-col gap-y-2  sm:flex-row justify-between  items-start sm:items-center">
@@ -328,14 +328,16 @@ function ReviewSection() {
                     alt="user-image"
                     width={48}
                     height={48}
-                    quality={80}
+                    quality={100}
                     className="rounded-full"
                   />
                   <div>
-                    <h2 className="text-white text-lg font-semibold">
+                    <h2 className="text-white text-[12px] lg:text-[15.98px] font-[500] sm:text-[600]">
                       {content.user}
                     </h2>
-                    <p className="text-white/50 text-sm ">{content.role}</p>
+                    <p className="text-white font-[300] sm:font-[400] lg:text-[11px] text-sm ">
+                      {content.role}
+                    </p>
                   </div>
                 </div>
                 <Image
@@ -343,13 +345,13 @@ function ReviewSection() {
                   alt="company-logo"
                   width={80}
                   height={80}
-                  quality={90}
-                  className="object-contain w-auto h-auto"
+                  quality={100}
+                  className="object-contain w-fit h-auto  lg:w-[136px] lg:h-[31px] "
                 />
               </div>
 
               {/* Review Text */}
-              <p className="text-white/80 text-sm leading-relaxed mt-3 max-w-screen sm:max-w-fit">
+              <p className="text-white font-[400] sm:font-[500] lg:text-[12px] text-sm leading-relaxed mt-3 max-w-screen sm:max-w-fit">
                 {content.review}
               </p>
             </div>
@@ -357,7 +359,7 @@ function ReviewSection() {
         </div>
 
         {/* Footer */}
-        <p className="mt-6 text-white font-semibold text-[clamp(12px,3vw,17px)] text-center uppercase ">
+        <p className="lg:mt-8 mt-6 text-white font-[600] sm:font-[700] text-[clamp(12px,3vw,17px)] text-center uppercase ">
           Connecting Travel Experts with Explorers
         </p>
         <ScrollingLogos />
