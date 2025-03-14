@@ -517,7 +517,7 @@ function DetailSection() {
               </h2>
               <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Travel companies experience a{" "}
-                <span className=" sm:font-[700] font-[600] text-[#525266]">
+                <span className=" font-[700] text-[#525266]">
                   45%+ increase in re-bookings
                 </span>{" "}
                 through Frienzy&apos;s re-targeting campaigns. Scale your
@@ -581,7 +581,7 @@ function DetailSection() {
               </h2>
               <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Travel operators{" "}
-                <span className="sm:font-[600] font-[500] text-[#525266]">
+                <span className="font-[700] text-[#525266]">
                   save 10+ hours a week
                 </span>{" "}
                 with AI-driven tools that streamlines itinerary uploads, expense
@@ -629,9 +629,9 @@ function DetailSection() {
                 Take group tours experience up a notch beyond just the
                 experience the travel destination provides by keeping travellers
                 fully engaged during the trip through{" "}
-                <span className="font-[700] text-[#525266]">
-                  in-app group chat, polls, and shared albums
-                </span>
+                {/* <span className="font-[700] text-[#525266]"> */}
+                in-app group chat, polls, and shared albums
+                {/* </span> */}
                 for them to interact and connect with one another. .
               </p>
             </div>
