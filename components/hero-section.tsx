@@ -133,7 +133,7 @@ function HeroSection() {
           </p> */}
 
           <h2 className="font-[600] sm:font-semibold text-center sm:text-left text-[28px] sm:tracking-[-3px] sm:text-3xl lg:text-5xl text-[#525266] tracking-[-1.71px] mt-4 leading-[38.84px] sm:leading-tight lg:leading-[68px]">
-            Launch A Custom App For Your Travel Business <br />
+            Launch A Custom App <br/> For Your Travel Business <br />
             <span className="text-[#FA602D]">-No Coding Required.</span>
           </h2>
           {/* <h2 className="font-[500] hidden sm:block sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">

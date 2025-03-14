@@ -630,8 +630,7 @@ function DetailSection() {
                 experience the travel destination provides by keeping travellers
                 fully engaged during the trip through{" "}
                 {/* <span className="font-[700] text-[#525266]"> */}
-                in-app group chat, polls, and shared albums
-                {/* </span> */}
+                in-app group chat, polls, and shared albums {/* </span> */}
                 for them to interact and connect with one another. .
               </p>
             </div>

@@ -38,7 +38,7 @@ interface Features {
 
 function UltimateSection() {
   const [isActive, setIsActive] = useState<number>(0);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const ultimateFeatures: Features[] = [
     {
@@ -150,7 +150,7 @@ function UltimateSection() {
           </div>
 
           <div className="relative flex-1 h-auto ">
-            {ultimateFeatures.map((feature, index) => (
+            {ultimateFeatures.map((feature, index: number) => (
               <Image
                 key={index}
                 src={feature.image}
@@ -207,7 +207,11 @@ function UltimateSection() {
                 </span>
               </div>
 
-              <h3 className="font-[600] sm:font-[700] text-sm sm:text-lg group-hover:text-[#6060BF] transition-colors duration-300 ease-in-out">
+              <h3
+                className={`font-[600] sm:font-[700] text-sm sm:text-lg group-hover:text-[#6060BF]  ${
+                  activeIndex === activeIndex ? "text-[#6060BF]" : ""
+                } transition-colors duration-300 ease-in-out`}
+              >
                 {ultimateFeatures[activeIndex].title}
               </h3>
 
