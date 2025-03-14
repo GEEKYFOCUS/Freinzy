@@ -92,6 +92,8 @@ import { Raleway } from "next/font/google";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import herobg from "@/public/hero-bg.png";
+import herobgtry from "@/public/new-crop.png";
+
 import herosample from "@/public/sample-app.png";
 import demobtnverlay from "@/public/demo-overlay.png";
 import herocloud from "@/public/cloud1.png";
@@ -105,11 +107,11 @@ const raleway = Raleway({
 function HeroSection() {
   return (
     <div
-      className={`${raleway.className} relative flex flex-col items-center sm:pt-16 sm:mb-32 mb-12 pt-8 pb-6 min-h-fit h-auto`}
+      className={`${raleway.className} relative flex flex-col items-center sm:pt-16 sm:mb-28 lg:mb-32 mb-4 pt-8 sm:pb-5 lg:pb-6 pb-4 min-h-fit h-auto`}
     >
-      <div className="mx-auto flex flex-col sm:flex-row items-center gap-8 max-w-6xl w-full px-4 sm:px-8">
+      <div className="mx-auto flex flex-col sm:flex-row items-center gap-8 max-w-6xl w-full px-0 sm:px-8">
         {/* Left Content */}
-        <div className="flex-1 text-center sm:text-left">
+        <div className="flex-1 text-center sm:text-left px-4">
           <div className="p-[2px] rounded-full bg-gradient-to-r max-w-fit from-[#ffffff] to-[#FAC9B9] border border-white shadow-lg mx-auto sm:mx-0">
             <div className="relative z-10 font-bold sm:text-[8px] md:text-[12px] lg:text-xs text-slate-800 bg-[#FFEFEA] rounded-full px-2 py-2 sm:px-2 md:px-2 lg:px-3 lg:py-2 min-[320px]:text-[10px] max-[420px]:text-xs">
               ✨ Frienzy ✨ The Ultimate White-label Group Travel App
@@ -130,14 +132,14 @@ function HeroSection() {
             coding required.
           </p> */}
 
-          <h2 className="font-[500] block sm:hidden sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">
-            Launch A Custom App For Your Travel Business
-            <span className="text-[#FA602D]"> -No Coding Required.</span>
+          <h2 className="font-[600] sm:font-semibold text-center sm:text-left text-[28px] sm:tracking-[-3px] sm:text-3xl lg:text-5xl text-[#525266] tracking-[-1.71px] mt-4 leading-[38.84px] sm:leading-tight lg:leading-[68px]">
+            Launch A Custom App For Your Travel Business <br />
+            <span className="text-[#FA602D]">-No Coding Required.</span>
           </h2>
-          <h2 className="font-[500] hidden sm:block sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">
+          {/* <h2 className="font-[500] hidden sm:block sm:font-[600] text-center sm:text-left text-xl sm:text-3xl lg:text-5xl text-[#525266] mt-4 leading-tight">
             Launch A Custom App For Your Travel Business <br />
             <span className="text-[#FA602D]">- No Coding Required.</span>
-          </h2>
+          </h2> */}
 
           <p className="text-center sm:text-left text-sm sm:text-base md:text-lg text-[#525266f1] mt-2 leading-relaxed sm:leading-[36px] mx-auto max-w-[600px]">
             Enhance the group travel experience, capture valuable customer data,
@@ -185,20 +187,20 @@ function HeroSection() {
 
         <div className="relative w-full sm:flex-1 block sm:hidden justify-center sm:justify-end">
           <div
-            className="relative w-full sm:w-[480px] h-[250px] sm:h-[520px] bg-center  bg-no-repeat"
-            style={{
-              backgroundImage: `url(${herobg.src})`,
-              backgroundPosition: "right",
-              backgroundSize: "cover",
-              flex: 1,
-            }}
+            className="relative w-screen min-w-screen sm:w-[480px] h-[420px] sm:h-[520px] bg-center  bg-no-repeat"
+            // style={{
+            //   backgroundImage: `url(${herobg.src})`,
+            //   backgroundPosition: "right",
+            //   backgroundSize: "1800px 1100px",
+            //   // flex: 1,
+            // }}
           >
             <Image
-              src={herosample}
+              src={herobgtry}
               alt="app-demo-sample"
               fill
-              quality={80}
-              className="object-contain h-full w-full"
+              quality={100}
+              className="object-contain  h-full w-full "
             />
           </div>
         </div>
@@ -211,7 +213,7 @@ function HeroSection() {
         quality={80}
         width={100}
         height={100}
-        className="absolute sm:-bottom-32 -bottom-12 w-full h-auto hidden sm:block"
+        className="absolute sm:-bottom-32 bottom-12 w-full h-auto block"
       />
     </div>
   );

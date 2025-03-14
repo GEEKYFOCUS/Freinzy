@@ -178,17 +178,17 @@ export default function Roadmap() {
               {/* Mobile View - Single Column */}
               <div className="flex gap-2 items-center md:hidden">
                 {/* Number Badge */}
-                <div className="bg-[#B2B2B2] p-1 rounded-lg justify-self-start place-self-start">
-                  <div className="bg-[#6060BF] text-white px-1 py-1 rounded-lg">
+                <div className="bg-[#B2B2B2] p-[5.24px] rounded-lg justify-self-start place-self-start">
+                  <div className="bg-[#6060BF] text-white px-[8.73px] py-[4px] rounded-lg">
                     0{index + 1}
                   </div>
                 </div>
                 {/* Text Content */}
                 <div>
-                  <h3 className="text-[16px] font-[600] text-[#525266]">
+                  <h3 className="text-[13px] font-[700] sm:[23px] leading-[24px] md:leading-[32px] text-[#525266]">
                     {item.title}
                   </h3>
-                  <p className="text-[#525266c4] text-[12px]">
+                  <p className="text-[#525266] text-[10px] sm:text-[17.8px] font-[400] leading-[16px]">
                     {item.description}
                   </p>
                 </div>

@@ -97,7 +97,7 @@ function UltimateSection() {
     >
       <div className="mx-auto pt-8 sm:pb-16 pb-6 max-w-6xl w-full px-6 sm:px-8">
         <div className="text-[#525266] flex flex-col items-center gap-y-4 sm:gap-y-6">
-          <h2 className="max-[400px]:text-base text-xl  sm:text-3xl sm:font-[600] font-[500] ">
+          <h2 className=" text-[20px]   sm:text-3xl font-[600]  leading-[40px]  sm:leading-[59.93px] ">
             The Ultimate Group Travel Solution
           </h2>
           <p className="sm:font-[400] font-[300] sm:text-[18px] text-[14px] text-center ">
@@ -192,8 +192,8 @@ function UltimateSection() {
               />
             </div>
 
-            <div className="group p-3 rounded-lg flex flex-col gap-y-3 items-center transition-all duration-300 ease-in-out hover:bg-[#E6E6F2] hover:border-l-2 sm:hover:border-l-4 hover:border-[#3A4096] w-full sm:max-w-[410px]">
-              <div className="flex items-center gap-x-1 sm:gap-x-2 shadow-sm rounded-full px-3 sm:px-4 py-1 sm:py-2 w-fit bg-white group-hover:bg-[#FAC9B9] transition-colors duration-300 ease-in-out">
+            <div className="group p-3 rounded-lg flex flex-col gap-y-3 items-center transition-all duration-300 ease-in-out bg-[#F8F8FF]  w-full sm:max-w-[410px]">
+              <div className="flex items-center gap-x-1 sm:gap-x-2 shadow-sm rounded-full px-3 sm:px-4 py-1 sm:py-2 w-fit  bg-[#FAC9B9] transition-colors duration-300 ease-in-out">
                 <Image
                   src={multiply}
                   alt="cancel-btn"
@@ -211,7 +211,7 @@ function UltimateSection() {
                 {ultimateFeatures[activeIndex].title}
               </h3>
 
-              <p className="font-[300] sm:font-[400] text-xs sm:text-[12px] leading-5 sm:leading-[28px]">
+              <p className="font-[400] sm:font-[400] text-[10px] sm:text-[12px] leading-[28px]  text-center sm:leading-[28px]">
                 {ultimateFeatures[activeIndex].content}
               </p>
             </div>
