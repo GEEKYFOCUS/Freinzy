@@ -512,10 +512,10 @@ function DetailSection() {
           {/* First Section */}
           <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-x-32">
             <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
-              <h2 className="text-[24px] sm:text-base leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
+              <h2 className="text-[24px] sm:text-[24px] lg:text-[27px] leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
                 Boost Traveler Satisfaction and Drive Repeat Bookings
               </h2>
-              <p className="text-[14px] sm:text-base leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
+              <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Travel companies experience a{" "}
                 <span className=" sm:font-[700] font-[600] text-[#525266]">
                   45%+ increase in re-bookings
@@ -544,11 +544,11 @@ function DetailSection() {
           {/* Second Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-x-32">
             <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
-              <h2 className="text-[24px] sm:text-base leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
+              <h2 className="text-[24px] sm:text-[24px] lg:text-[27px] leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
                 One Place for Your Clients to Access Everything And Get
                 Real-Time Updates
               </h2>
-              <p className="text-[14px] sm:text-base leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
+              <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Your travel clients can access their itineraries, reservations,
                 flight tickets, invoices and other documents in one place. You
                 can also share real-time updates with clients through push
@@ -576,10 +576,10 @@ function DetailSection() {
           {/* Third Section */}
           <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-x-32">
             <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
-              <h2 className="text-[24px] sm:text-base leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
+              <h2 className="text-[24px] sm:text-[24px] lg:text-[27px] leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
                 Save 10+ Hours A Week With Frienzy&apos;s AI
               </h2>
-              <p className="text-[14px] sm:text-base leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
+              <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Travel operators{" "}
                 <span className="sm:font-[600] font-[500] text-[#525266]">
                   save 10+ hours a week
@@ -622,10 +622,10 @@ function DetailSection() {
           {/* Fourth Section */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-4 sm:gap-x-32">
             <div className="p-2 space-y-4 sm:space-y-[23px] flex-1 max-w-screen">
-              <h2 className="text-[24px] sm:text-base leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
+              <h2 className="text-[24px] sm:text-[24px] lg:text-[27px] leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
                 Build Your Community With In-Trip Engagement
               </h2>
-              <p className="text-[14px] sm:text-base leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
+              <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Take group tours experience up a notch beyond just the
                 experience the travel destination provides by keeping travellers
                 fully engaged during the trip through{" "}
