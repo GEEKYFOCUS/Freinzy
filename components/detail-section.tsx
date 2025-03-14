@@ -625,7 +625,7 @@ function DetailSection() {
               <h2 className="text-[24px] sm:text-[24px] lg:text-[27px] leading-[41px]  font-[600]  sm:leading-[35px] text-[#525266]">
                 Build Your Community With In-Trip Engagement
               </h2>
-              <p className="text-[14px] sm:text-[15px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
+              <p className="text-[14px] sm:text-[15.78px] lg:text-[17px] leading-[20px] font-[400] sm:leading-[35px] text-[#525266]">
                 Take group tours experience up a notch beyond just the
                 experience the travel destination provides by keeping travellers
                 fully engaged during the trip through{" "}
